@@ -1,0 +1,13 @@
+# Dataset
+task-01-arabic-text-correction/data/ar_50k.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
