@@ -5,7 +5,7 @@ This document outlines the step-by-step journey, experiments, and iterations mad
 ---
 
 ## Phase 1: Basic Spelling & LLM Grammar Testing
-**File Reference:** [`Arabic_Text_Correct.ipynb`](Arabic_Text_Correct.ipynb)
+**File Reference:** [`Arabic_Text_Correct.ipynb`](../notebooks/Arabic_Text_Correct.ipynb)
 
 In this initial phase, the goal was to identify and fix spelling mistakes at the word level, and then use LLMs to fix the grammar contextually.
 
@@ -32,7 +32,7 @@ After fixing the spelling, we attempted to pass the sentence to several models f
 ---
 
 ## Phase 2: Hardcoded Grammatical Rules
-**File Reference:** [`Arabic_Text_Corrector.ipynb`](Arabic_Text_Corrector.ipynb)
+**File Reference:** [`Arabic_Text_Corrector.ipynb`](../notebooks/Arabic_Text_Corrector.ipynb)
 
 Since standard LLMs struggled, the next approach was to manually implement grammar rules using the rich morphological features provided by CAMeL Tools.
 
@@ -58,7 +58,7 @@ If a mismatch was found, we used the `camel_tools.morphology.generator.Generator
 ---
 
 ## Phase 3: The Hybrid Engineering Pipeline (Best Approach)
-**File Reference:** [`GBG_Task1_AR_Text_Correction_Enhanced.ipynb`](GBG_Task1_AR_Text_Correction_Enhanced.ipynb)
+**File Reference:** [`GBG_Task1_AR_Text_Correction_Enhanced.ipynb`](../notebooks/GBG_Task1_AR_Text_Correction_Enhanced.ipynb)
 
 To get the best of both worlds, an engineering pipeline was designed combining the reliability of rule-based spelling correction with the contextual power of a specialized Grammatical Error Correction (GEC) Transformer.
 

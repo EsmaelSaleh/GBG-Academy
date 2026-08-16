@@ -3,7 +3,7 @@
 ## 1. Objective
 This report details the experimental comparison of Vanilla RNN, GRU, and LSTM architectures on three distinct NLP sequence-learning problems. The objective is to investigate the trade-offs between predictive performance, long-term memory capabilities, and computational costs.
 
-*Note: The source code for all three models can be found in the accompanying Jupyter Notebook: [RNN_vs_GRU_vs_LSTM.ipynb](RNN_vs_GRU_vs_LSTM.ipynb)*
+*Note: The source code for all three models can be found in the accompanying Jupyter Notebook: [RNN_vs_GRU_vs_LSTM.ipynb](../notebooks/RNN_vs_GRU_vs_LSTM.ipynb)*
 
 To ensure a fair comparison, all models shared identical hyperparameters (e.g., embedding dimension: 100, hidden size: 128, batch size: 64, learning rate: 1e-3, dropout: 0.3, optimizer: Adam) and vocabulary setups. Only the recurrent cell architecture was varied.
 
@@ -23,8 +23,8 @@ To ensure a fair comparison, all models shared identical hyperparameters (e.g., 
 
 **Training & Validation Plots**:
 
-![Task 1 - Loss](plot_1.png)
-![Task 1 - Accuracy](plot_2.png)
+![Task 1 - Loss](../plots/plot_1.png)
+![Task 1 - Accuracy](../plots/plot_2.png)
 
 ### Task 2: Named Entity Recognition (CoNLL-2003 / WNUT-17)
 **Objective**: Sequence tagging to identify entities (e.g., PERSON, LOCATION) at every timestep.
@@ -38,8 +38,8 @@ To ensure a fair comparison, all models shared identical hyperparameters (e.g., 
 
 **Training & Validation Plots**:
 
-![Task 2 - Loss](plot_3.png)
-![Task 2 - Token Accuracy](plot_4.png)
+![Task 2 - Loss](../plots/plot_3.png)
+![Task 2 - Token Accuracy](../plots/plot_4.png)
 
 ### Task 3: Next-Word Prediction (WikiText-2)
 **Objective**: Predict the next word based on varying sequence lengths (10, 25, 50, 100, 200).
@@ -54,8 +54,8 @@ To ensure a fair comparison, all models shared identical hyperparameters (e.g., 
 
 **Training & Validation Plots**:
 
-![Task 3 - Perplexity vs sequence length](plot_5.png)
-![Task 3 - Training time vs sequence length](plot_6.png)
+![Task 3 - Perplexity vs sequence length](../plots/plot_5.png)
+![Task 3 - Training time vs sequence length](../plots/plot_6.png)
 
 ---
 
